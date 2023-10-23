@@ -115,7 +115,18 @@ class Program
         //Concat
         var concated = students.Concat(listStudents);
 
-        //OrderBy
+        //OrderBy, ThenBy and Reverse
+        var ordered = skipWhile.OrderBy(x => x.Name).ThenBy(x => x.Nota2).Reverse().ToList();
+        foreach (var item in ordered)
+        {
+            Console.WriteLine(item.Name + "  "+ item.Nota2);
+        }
+        Console.ReadLine();
+
+        //GroupBy
+
+
+
 
 
 
